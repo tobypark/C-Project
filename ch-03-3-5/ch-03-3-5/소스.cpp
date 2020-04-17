@@ -17,7 +17,7 @@ void smTranspose(term a[], term b[]) {
     if (v > 0) {
         p = 1;
         for (i = 0; i < n; i++)
-            for (i = 1; j <= v; j++)
+            for (j = 1; j <= v; j++)
                 if (a[j].col == i) {
                     b[p].row = a[j].col;
                     b[p].col = a[j].row;
@@ -25,5 +25,4 @@ void smTranspose(term a[], term b[]) {
                     p++;
                 }
     }
-
 }
